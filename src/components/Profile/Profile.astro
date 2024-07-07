@@ -1,0 +1,60 @@
+---
+
+---
+
+<div class="layout">
+  <div class="avatar-block">
+    <div class="avatar-container">
+      <div class="avatar-placeholder">AU</div>
+    </div>
+  </div>
+  <div class="profile-name">
+    <div>A. User</div>
+    <div>username</div>
+  </div>
+  <div class="profile-details">
+    <div>desc</div>
+    <ul>
+      <li>link</li>
+      <li>link</li>
+    </ul>
+  </div>
+</div>
+
+<style>
+  .layout {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: minmax(64px, max-content) 1fr;
+    grid-template-areas: "avatar name" "details details";
+  }
+
+  .avatar-block {
+    grid-area: avatar;
+  }
+
+  .avatar-container {
+    aspect-ratio: 1 / 1;
+    height: auto;
+    max-width: 128px;
+  }
+
+  .avatar-placeholder {
+    align-items: center;
+    background-color: wheat;
+    border-radius: 50%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .profile-name {
+    align-self: center;
+    grid-area: name;
+  }
+
+  .profile-details {
+    grid-area: details;
+  }
+</style>

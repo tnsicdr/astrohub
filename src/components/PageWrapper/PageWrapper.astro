@@ -1,0 +1,37 @@
+---
+import Footer from "../Footer/Footer.astro";
+import Header from "../Header/Header.astro";
+
+interface Props {
+  siteTitle?: string;
+  pageTitle?: string;
+}
+
+const { siteTitle, pageTitle } = Astro.props;
+
+const title = `${siteTitle}${pageTitle ? ` - ${pageTitle}` : null}`;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <Header siteTitle={siteTitle} />
+      <div class="content-container"><slot /></div>
+      <Footer />
+    </div>
+  </body>
+</html>
+
+<style>
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+</style>

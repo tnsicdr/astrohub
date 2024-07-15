@@ -5,36 +5,21 @@ import Header from "../../components/Header/Header.astro";
 import LinkBar from "../../components/LinkBar/LinkBar.astro";
 import Profile from "../../components/Profile/Profile.astro";
 import "../../styles/reset.css";
+import "../../styles/colors.css";
 ---
 
-<div class="wrapper">
-  <Header />
-  <div class="content-container">
-    <div class="content-section">
-      <Profile />
-    </div>
-    <div class="content-section">
-      <LinkBar />
-    </div>
-    <hr class="divider" />
-    <div class="content-section">
-      <ContentCard />
-    </div>
-  </div>
-  <Footer />
+<div class="content-section">
+  <Profile />
+</div>
+<div class="content-section">
+  <LinkBar />
+</div>
+<hr class="divider" />
+<div class="content-section">
+  <ContentCard />
 </div>
 
 <style>
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .content-container {
-    display: flex;
-    flex-direction: column;
-  }
-
   .content-section {
     padding: 1rem;
   }

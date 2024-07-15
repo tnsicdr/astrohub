@@ -1,14 +1,19 @@
 ---
+interface Props {
+  siteTitle?: string;
+}
 
+const { siteTitle } = Astro.props;
 ---
 
 <header>
-  <div>name</div>
+  <div>{siteTitle}</div>
 </header>
 
 <style>
   header {
+    background-color: var(--appbar);
+    border-bottom: 1px solid;
     padding: 1rem;
-    border-bottom: 1px solid black;
   }
 </style>

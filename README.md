@@ -12,4 +12,8 @@ npm i
 npm run dev
 ```
 
+## Icons
+
+This repo leverages iconify icons, specifically octicon: https://icon-sets.iconify.design/octicon/
+
 [![Built with Astro](https://astro.badg.es/v2/built-with-astro/medium.svg)](https://astro.build)

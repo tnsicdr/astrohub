@@ -11,8 +11,9 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
+    "@iconify-json/octicon": "^1.1.56",
     "astro": "^4.11.5",
-    "iconoir": "^7.7.0",
+    "astro-icon": "^1.1.0",
     "typescript": "^5.5.3"
   },
   "devDependencies": {

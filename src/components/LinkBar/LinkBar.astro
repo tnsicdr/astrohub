@@ -1,20 +1,27 @@
 ---
-
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
 ---
 
 <div class="link-bar">
   <ul class="links">
-    <li>Overview</li>
-    <li>Posts</li>
+    <li><Icon name="octicon:book" />Overview</li>
+    <li><Icon name="octicon:repo" />Posts</li>
   </ul>
 </div>
 
 <style>
   .link-bar {
   }
+
   .links {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+
+    li {
+      display: flex;
+      flex-direction: row;
+    }
   }
 </style>
